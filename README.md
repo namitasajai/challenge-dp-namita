@@ -1,31 +1,5 @@
 # Spring '23 React Challenge
 
-Hey there! Welcome to the DP's web dev challenge~
-
-The goal of this challenge is for you to demonstrate the ability to:
-
-1. Build polished, production grade websites
-2. Build products with minimal direction
-3. Work within a set timeline
-
-Using React is by no means a requirement for this challenge, you can find starter code for completing this challenge in pure html, jquery, and css [here](https://github.com/dailypenn/challenge). If you're more comfortable completing this challenge using some other frontend library or framework like Angular, Vue, Preact, Elm, Svelte (or one of the thousand other competing frameworks out there) or anything else really, go ahead! We want to judge you at your best, so use whatever tooling you're most comfortable with!
-
-Also, remeber that at DP, we do not judge anyone by his/ her initial performances. Instead, what we value is the progress you made from the moment you received your challenge to the moment your turned in your code. So put efforts into the challenge and good luck.
-
-In this challenge, you'll be building something you may have seen before:
-a quiz for [Under the Button](https://www.underthebutton.com/article/2020/01/parents-obligated-talk). We'll be providing you with the quiz's content in a file called `data.json`, but building out the website is completely up to you!
-
----
-
-### Getting Started
-- Make a copy of this repository by either running `git clone https://github.com/dailypenn/challenge-react.git` on your local computer or simply click on the Green **Code** button and then click on **Download ZIP**.
-- Navigate to the cloned repo in the terminal and run `npm install` or `yarn install`
-- Run `npm run start` or `yarn start`
-
-Note: This project is boostrapped with Create React App (CRA), so hot-reloading has been configured. This means after you run yarn start or npm start, the application will be recompiled automatically after a file is edited. 
-
----
-
 ### General Requirements
 - We want you to duplicate the functionality of this [quiz](https://www.underthebutton.com/article/2020/01/parents-obligated-talk). This means showing each question with its options as a form that people can fill out and submit for a response.
 - Your code should use `data.json` under `/src` as the content to show in the form.
