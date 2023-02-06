@@ -1,7 +1,7 @@
 # Spring '23 React Challenge 
 
 ### General Overview
-- Duplicated the functionality of this [quiz](https://www.underthebutton.com/article/2020/01/parents-obligated-talk). 
+  Developed a quiz application with dynamic functionality, allowing for easy customization and modification of quiz content. Implemented form submissions to display results based on user responses, utilizing data from a JSON file. Ensured the application's robustness by implementing a solution that is not hardcoded and can handle changes to the number of questions, options, results, and their respective text. The application is fully functional, with a reproducible response system that displays the same result upon repeated submissions with the same answers.
 
 ---
 
@@ -15,6 +15,9 @@
 ---
 
 ### Tools
+- Application: 
+  - React
+
 - Styling:
   - CSS files (or SCSS)
   - CSS-in-JS
