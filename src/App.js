@@ -33,6 +33,13 @@ function App() {
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <h3>{time}</h3>
       </h2> */}
+      <div class="questions">
+        <div class="question-card">
+          <h2> CONGRATULATIONS! </h2>
+          <div> Insert Result </div>
+
+        </div>
+      </div>
 
       {/* 2. Question Cards */}
       <div class="questions">
