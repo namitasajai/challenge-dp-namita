@@ -1,6 +1,5 @@
 import React from 'react';
-import { RootState } from '../states/store.ts';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { setAnswer } from '../states/questionSlice.ts'; 
 
@@ -11,7 +10,6 @@ const QuestionCard = (props) => {
 
     const Click = (k) => {
         dispatch(setAnswer({prompt: props.title, choice: k})); 
-        console.log(currentChoice);
     }
 
     useEffect(() => {
@@ -23,7 +21,7 @@ const QuestionCard = (props) => {
             <div id="prompt"><b>{props.title}</b></div>
             <ul>
                 {Object.entries(answerChoices).map(([key, value]) => (
-                    <li class={(key === currentChoice)? "choice-selected" : "choice"} key={key} onClick={() => Click(key)}>
+                    <li className={(key === currentChoice)? "choice-selected" : "choice"} key={key} onClick={() => Click(key)}>
                         {value}
                     </li>
                 ))}

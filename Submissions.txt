@@ -2,8 +2,35 @@
 I spent about 4-5 hours on this challenge. 
 
 2. Describe the features you have implemented.
-I 
+- Title:
+    - The title of the quiz is wrapped in a Javascript animation that loops through and changes the title slightly for each iteration to create a playful interaction between the contents of the quiz and header itself. 
+    
+- QuestionCard: 
+    - Each question card is constructed using JavaScript to iterate through the data.json Object labeled "questions" and then returning a new question-card for each question.
+    - These question cards contain "choices" that are styled with CSS. Hover and click animations were implemented to create a better user experience. 
+
+- Results: 
+    - The results are similarly formatted to the question cards to create a visual language. 
+    - Using a global Object through the Redux toolkit, I was able to store the answer choices selected by the user in an object that maps each question to its selected choice. Using the keys from this object, I was able to create a function that counts the most repeated answer choice to display the corresponding result.
+
+- Navigation: React Router
+    - React-router is used to allow the user to navigate between pages
+    - Each page is stored as a React component
+
+- State Management: Redux Toolkit
+    - I used a questionSlice to store a global Object with prompts as keys and the values as the choices selected. 
+    - The state stored in questionSlice is used through dispatch to determine whether or not a choice is already selected and to prevent a user from selecting multiple answer choices at the same time. 
+    - This Object is also used to collect data pertaining to whether or not all answer choices were selected. 
+    - The boolean value returned from comparing the length of the keys stored to the number of questions is stored to decide whether or not to enable the "Show my results!" button at the bottom of the page. 
+    - Finally, the clean() function stored in this Object is used to reset the page when "Retake Quiz" is selected. 
 
 3. Describe the difficulties you faced (if any) while working on the challenge and how you tackled them.
+While working on this challenge, I worked with tools/languages that were unfamiliar to me previously including React-Router and typescript to implement some of the features on my webpage. While exploring these tools, I found that by structuring my components/application one way would require unique solutions to otherwise simple concepts. While implementing React-router, for instance, I found that using the approach
+that most use did not seem to work well with the React components I had created. I was challenged to devise a workaround by researching solutions and trying iteratively to find a solution, which in this example was to create a browser router that routed the pages based on the path. 
+When starting this process, I did not realize that maintaining the invariant that there can only be 1 answer per question and submissions are only valid when all answers are selected would be too difficult. However, I quickly realized that the scope of variables was incredibly limiting in React. Since each question was created in separate div's with the exact same classNames, it was difficult to use typical Javascript to implement this feature. 
+This led me to using React Redux which streamlined the process significantly. Although I was familiar with the concept of React Redux, this project allowed me to formalize my knowledge and struggle through the complexities of creating/storing a state. 
+More generally, when stepping into unfamiliar territory I would run into several errors that required debugging through the use of console.log's and other practices. 
+
 
 4. How much time can you spend each week working for DP Developers?
+I can commit about 4-5 hours/week.

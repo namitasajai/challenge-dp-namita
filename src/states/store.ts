@@ -1,4 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
+// @ts-ignore
 import questionReducer from './questionSlice.ts';
 
 export const store = configureStore({
