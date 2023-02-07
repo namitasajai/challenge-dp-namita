@@ -27,11 +27,11 @@ const Home = () => {
 
             {/* 3. Submit Button */}
             {Object.keys(choices).length === Data.questions.length ? (
-                <div className="choice" id="submit">
-                    <Link to="/results" style={{ textDecoration: 'none' }} >
+                <Link to="/results" style={{ textDecoration: 'none' }} >
+                    <div className="choice" id="submit">
                         <b id="submit" >Show me my results!</b>
-                    </Link>
-                </div>
+                    </div>
+                </Link>
             ) : (
                 <div className="choice" id="submit">
                     <button disabled><b> Show me my results!</b></button>
