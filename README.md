@@ -1,4 +1,4 @@
-# Spring '23 React Challenge 
+# Multiple Choice Quiz
 
 ### General Overview
   Developed a quiz application with dynamic functionality, allowing for easy customization and modification of quiz content. Implemented form submissions to display results based on user responses, utilizing data from a JSON file. Ensured the application's robustness by implementing a solution that is not hardcoded and can handle changes to the number of questions, options, results, and their respective text. The application is fully functional, with a reproducible response system that displays the same result upon repeated submissions with the same answers.
